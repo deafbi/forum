@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+    background-color: red;
+    color: white;
+}
+
+[x-cloak] { display: none !important; }
+
+.categories-container {
+    position: relative;
+    z-index: 1;
+}
+
+.next-section-container {
+    clear: both;
+  }
+
+.categories {
+    position: absolute;
+    width: 100%;
+}
+
+
+.user-bg {
+    position: relative;
+    border-top-left-radius: 12px;
+    background-color: #202020;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.watermark {
+    position: relative;
+    opacity: 0.5;
+}
+
+.watermark::after {
+    content: "Deleted";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    text-align: center;
+}
+
+.markdown p {
+    font-size: 1rem/* 16px */;
+    line-height: 1.5rem/* 24px */;
+    color: rgb(163 163 163);
+    font-weight: 500;
+    margin: 0 0 1rem;
+}
+
+.markdown h1 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem;
+    color: rgb(163 163 163);
+    font-weight: 700;
+}
+
+.markdown h2 {
+    font-size: 1.25rem;
+    color: rgb(163 163 163);
+    font-weight: 700;
+}
+
+.markdown h3 {
+    font-size: 1.125rem;
+    color: rgb(163 163 163);
+    font-weight: 700;
+}
+
+.markdown h4 {
+    font-size: 1rem;
+    color: rgb(163 163 163);
+    font-weight: 700;
+}
+
+.markdown h5 {
+    font-size: 0.875rem;
+    color: rgb(163 163 163);
+    font-weight: 700;
+}
+
+.markdown h6 {
+    font-size: 0.75rem;
+    color: rgb(163 163 163);
+    font-weight: 700;
+}
+
+.markdown hr {
+    height: 1px;
+    margin-top: 2rem; /* 32px */
+    margin-bottom: 2rem; /* 32px */
+    border-width: 0px;
+    background-color: rgb(64 64 64);
+}
+
+.markdown pre {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(163 163 163);
+    background-color: rgb(64 64 64);
+    border-radius: 0.25rem;
+    padding: 1rem;
+}
+
+.markdown code {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(163 163 163);
+    background-color: rgb(64 64 64);
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.markdown a {
+    color: rgb(163 163 163);
+}
+
+.markdown a:hover {
+    color: rgb(163 163 163);
+}
+
+.markdown a:active {
+    color: rgb(163 163 163);
+}
+
+.markdown ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.markdown ol {
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+
+.markdown strong {
+    font-weight: 700;
+}
+
+.markdown em {
+    font-style: italic;
+}
+
+.markdown ul, .markdown ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.markdown blockquote {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.markdown del {
+    text-decoration: line-through;
+}
+
+.markdown li {
+    margin-bottom: 0.5rem;
+}
+
+.markdown blockquote {
+    border-left: 0.25rem solid #e2e8f0;
+    padding-left: 1rem;
+}
+
+.markdown code {
+    background-color: #1D1D1D;
+    color: rgb(163 163 163);
+}
+
+.markdown pre {
+    background-color: #1D1D1D;
+    color: rgb(163 163 163);
+}
+
+.markdown table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+    color: rgb(163 163 163);
+    border-spacing: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    --tw-text-opacity: 1;
+    color: rgb(212 212 212 / var(--tw-text-opacity));
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.markdown table th {
+    padding: 0.25rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(21 21 21 / var(--tw-bg-opacity));
+}
+
+.markdown table td {
+    padding: 0.5rem;
+    padding-top: 1rem;
+}
+
+.markdown table tr:nth-child(odd) {
+    background-color: #1D1D1D;
+}
+
+.markdown table tr:nth-child(even) {
+    background-color: #1D1D1D;
+}
+
+.markdown img {
+    max-width: 100%;
+    max-height: 14rem/* 128px */;
+}
+
+.markdown img:hover {
+    opacity: 0.8;
+}
+
+.markdown linebreak {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.rank-supreme {
+    color: #54FF9F;
+    text-shadow: 1px 1px 10px #39c70d;
+}
+
+.rank-admin {
+    color: #6366F1;
+    text-shadow: 1px 1px 10px #6366F1;
+}
+
+.online-border {
+    border: 2px solid green;
+}
